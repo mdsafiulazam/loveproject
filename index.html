@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>i love you project</title>
+    <style>
+        body{
+            font-family: 'Oswald', sans-serif;
+            font-weight: 600;
+        }
+        .section{
+            max-width: 1300px;
+            background:linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)),url(photo-1506869640319-fe1a24fd76dc.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            height:90vh;
+            text-transform: capitalize;
+            margin:auto;
+            text-align: center;
+        }
+        h3{
+            color:#c3c3c3;
+            padding-top: 200px;
+            font-size: 30px;
+        }
+        h2{
+            color:#ff5200;
+            font-size: 40px;
+        }
+        button{
+            text-align: center;
+            font-size: 30px;
+            padding: 6px 70px;
+            text-transform: capitalize;
+            background: rgba(0, 0, 0, 0.78);
+            color:rgba(224, 222, 221, 0.94);
+            border:none;
+            font-weight:bold
+        }
+        @media  only screen and (max-width: 768px){
+     section{
+         height: 65vh;}
+            h2{
+                font-size: 30px;
+            } 
+            h3{
+                font-size: 25px;
+            }
+            button{
+                font-size: 20px;
+            }
+    }
+           @media  only screen and (max-width: 540px){
+     section{
+         height: 65vh;}
+            h2{
+                font-size: 30px;
+            } 
+            h3{
+                font-size: 25px;
+            }
+            button{
+                font-size: 20px;
+            }
+    }
+           @media  only screen and (max-width: 468px){
+     section{
+         height: 65vh;}
+            h2{
+                font-size: 30px;
+            } 
+            h3{
+                font-size: 20px;
+            }
+            button{
+                font-size: 20px;
+            }
+    }
+    </style>
+</head>
+<body>
+      <div class="section">
+         <h3>you one of those people who make my life better just by being in it . . . .</h3>
+          <h2 id="friend">will you be my friend??</h2>
+       <div class="button">
+           <button type="button" onclick="love()">yes</button>
+           <button type="button" onclick="sad()">no</button>
+       </div>
+          
+      </div>
+    
+   
+     <script>
+    
+    function love(){
+        document.getElementById("friend").innerHTML="welcome, my best friend and i love you.";
+    }
+    function sad(){
+             document.getElementById("friend").innerHTML="so sad but i mine you are my best friend and i love you.";
+         }
+
+    </script>
+</body>
+</html>
